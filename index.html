@@ -1,559 +1,230 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Alice Inc</title>
-    <meta charset="utf-8">    
-    <link rel="icon" href="images/AliceLogo.jpg" type="image/x-icon"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <meta name="description" content="">
-    <meta name="keywords" content="html, css, javascript, jquery">
-    <meta name="author" content="">
-
-    <link rel="stylesheet" href="css/vendor/icomoon/style.css">
-    <link rel="stylesheet" href="css/vendor/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/vendor/animate.min.css">
-    <link rel="stylesheet" href="css/vendor/aos.css">
-    <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
-    <link rel="stylesheet" href="css/vendor/jquery.fancybox.min.css">
-    
-
-    <link rel="stylesheet" href="css/style.css">
-
-  </head>
-  <body data-spy="scroll" data-target=".site-nav-target" data-offset="200">
-
-    <nav class="unslate_co--site-mobile-menu">
-      <div class="close-wrap d-flex">
-        <a href="#" class="d-flex ml-auto js-menu-toggle">
-          <span class="close-label">Close</span>
-          <div class="close-times">
-            <span class="bar1"></span>
-            <span class="bar2"></span>
-          </div>
-        </a>
-      </div>
-      <div class="site-mobile-inner"></div>
-    </nav>
 
 
-    <div class="unslate_co--site-wrap">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content  ="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M1000 | ????</title>
+  <style>
+    canvas {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, .2);
+    }
+  </style>
 
-      <div class="unslate_co--site-inner">
+</head>
 
-        <div class="lines-wrap">
-          <div class="lines-inner">
-            <div class="lines"></div>
-          </div>
-        </div>
-      
-      <nav class="unslate_co--site-nav site-nav-target">
+<body>
 
-        <div class="container">
+  <audio autoplay loop>
+    <source src="ido.mp3" type="audio/mp3">
+  </audio>
+  <div style="font-size: 20px">
+    <script type="text/javascript" style="display: block;">
+        farbbibliothek = new Array();
+        // farbbibliothek[0] = new Array("#FF0000", "#FF1100", "#FF2200", "#FF3300", "#FF4400", "#FF5500", "#FF6600", "#FF7700", "#FF8800", "#FF9900", "#FFaa00", "#FFbb00", "#FFcc00", "#FFdd00", "#FFee00", "#FFff00", "#FFee00", "#FFdd00", "#FFcc00", "#FFbb00", "#FFaa00", "#FF9900", "#FF8800", "#FF7700", "#FF6600", "#FF5500", "#FF4400", "#FF3300", "#FF2200", "#FF1100");
+        // farbbibliothek[1] = new Array("#00FF00", "#000000", "#00FF00", "#00FF00");
+        // farbbibliothek[2] = new Array("#00FF00", "#FF0000", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00");
+        //farbbibliothek[3] = new Array("#FF0000", "#FF4000", "#FF8000", "#FFC000", "#FFFF00", "#C0FF00", "#80FF00", "#40FF00", "#00FF00", "#00FF40", "#00FF80", "#00FFC0", "#00FFFF", "#00C0FF", "#0080FF", "#0040FF", "#0000FF", "#4000FF", "#8000FF", "#C000FF", "#FF00FF", "#FF00C0", "#FF0080", "#FF0040");
+        //farbbibliothek[4] = new Array("#FF0000", "#EE0000", "#DD0000", "#CC0000", "#BB0000", "#AA0000", "#990000", "#880000", "#770000", "#660000", "#550000", "#440000", "#330000", "#220000", "#110000", "#000000", "#110000", "#220000", "#330000", "#440000", "#550000", "#660000", "#770000", "#880000", "#990000", "#AA0000", "#BB0000", "#CC0000", "#DD0000", "#EE0000");
+        // farbbibliothek[5] = new Array("#000000", "#000000", "#000000", "#FFFFFF", "#FFFFFF", "#FFFFFF");
+        // farbbibliothek[6] = new Array("#0000FF", "#FFFF00");
+        farben = farbbibliothek[3];
         
-          <div class="row align-items-center justify-content-between text-left">
-            <div class="col-md-5 text-right">
-              <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
-                <li class="has-children">
-                  <a href="#home-section" class="nav-link">Ana Sayfa</a>
-                </li>
-                <li><a href="#portfolio-section" class="nav-link">Portfolyo</a></li>
-                <li><a href="#services-section" class="nav-link">Özellikler</a></li>
-                
-              </ul>
-            </div>
-            <div class="site-logo pos-absolute">
-              <a href="index.html" class="unslate_co--site-logo">ALİCE<span>.</span></a>
-            </div>
-            <div class="col-md-5 text-right text-lg-left">
-              <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
-                <li><a href="#testimonial-section" class="nav-link">Yorumlar</a></li>
-                <li><a href="#contact-section" class="nav-link">İletişim</a></li>
-                <li class="has-children">
-                  <a href="index.html#home-section" class="nav-link">Diğer</a>
-                  <ul class="dropdown">
-                    <li>
-                      <a href="S.S.S.html">S.S.S</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
+        function string2array(b) { 
+            Buchstabe = new Array(); 
+            while (farben.length < b.length) { farben = farben.concat(farben) } 
+            k = 0; 
+            while (k <= b.length) { Buchstabe[k] = b.charAt(k); k++ } }
+        function divserzeugen() { 
+            for (var b = 0; b < Buchstabe.length; b++) { document.write("<span id='a" + b + "' class='a" + b + "'>" + Buchstabe[b] + "</span>") } farbschrift() } 
+        function farbschrift() { 
+            for (var b = 0; b < Buchstabe.length; b++) { document.all["a" + b].style.color = farben[b] } 
+            farbverlauf() } 
+        var a = 1; 
+        function farbverlauf() { for (var b = 0; b < farben.length; b++) { farben[b - 1] = farben[b]} farben[farben.length - 1] = farben[-1]; setTimeout("farbschrift()", 30) } //TỐC ĐỘ ĐỔI MÀU
+        var farbsatz = 1; 
+        function farbtauscher() { farben = farbbibliothek[farbsatz]; while (farben.length < text.length) { farben = farben.concat(farben) } farbsatz = Math.floor(Math.random() * (farbbibliothek.length - 0.0001)) } 
+        setInterval("farbtauscher()", 7200000);
+        text1 = $('#title');
+        text2="love";
+        string2array(text2);
+        document.write("<div class='center-text' style='background-color:rgb(0, 0, 0);width: 100%;color: rgb(0,0,0);height:100%;font-size: 31px;font-style: italic;display: flex;align-items: center;justify-content: center;margin-bottom: 5px;text-align: center;display:block'>");
+        divserzeugen();
+        document.write("</div>");
+        document.write(text1);
+    </script>
+    </div>  
+  <canvas id="heart"></canvas>
+  
+  
+  <script>
+    window.requestAnimationFrame =
+      window.__requestAnimationFrame ||
+      window.requestAnimationFrame ||
+      window.webkitRequestAnimationFrame ||
+      window.mozRequestAnimationFrame ||
+      window.oRequestAnimationFrame ||
+      window.msRequestAnimationFrame ||
+      (function () {
+        return function (callback, element) {
+          var lastTime = element.__lastTime;
+          if (lastTime === undefined) {
+            lastTime = 0;
+          }
+          var currTime = Date.now();
+          var timeToCall = Math.max(1, 33 - (currTime - lastTime));
+          window.setTimeout(callback, timeToCall);
+          element.__lastTime = currTime + timeToCall;
+        };
+      })();
+    window.isDevice = (/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(((navigator.userAgent || navigator.vendor || window.opera)).toLowerCase()));
+    var loaded = false;
+    var init = function () {
+      if (loaded) return;
+      loaded = true;
+      var mobile = window.isDevice;
+      var koef = mobile ? 0.5 : 1;
+      var canvas = document.getElementById('heart');
+      var ctx = canvas.getContext('2d');
+      var width = canvas.width = koef * innerWidth;
+      var height = canvas.height = koef * innerHeight;
+      var rand = Math.random;
+      ctx.fillStyle = "rgba(0,0,0)";
+      ctx.fillRect(0, 0, width, height);
 
-              <ul class="site-nav-ul-none-onepage text-right d-inline-block d-lg-none">
-                <li><a href="#" class="js-menu-toggle">Menü</a></li
-              </ul>
+      var heartPosition = function (rad) {
+        // return [Math.sin(rad), Math.cos(rad)];
+        return [Math.pow(Math.sin(rad), 3), -(15 * Math.cos(rad) - 5 * Math.cos(2 * rad) - 2 * Math.cos(3 * rad) - Math.cos(4 * rad))];
+      };
+      var scaleAndTranslate = function (pos, sx, sy, dx, dy) {
+        return [dx + pos[0] * sx, dy + pos[1] * sy];
+      };
 
-            </div>
-          </div>
-        </div>
+      window.addEventListener('resize', function () {
+        width = canvas.width = koef * innerWidth;
+        height = canvas.height = koef * innerHeight;
+        ctx.fillStyle = "rgba(0,0,0,1)";
+        ctx.fillRect(0, 0, width, height);
+      });
 
-      </nav>
+      var traceCount = mobile ? 20 : 50;
+      var pointsOrigin = [];
+      var i;
+      var dr = mobile ? 0.3 : 0.1;
+      for (i = 0; i < Math.PI * 2; i += dr) pointsOrigin.push(scaleAndTranslate(heartPosition(i), 210, 13, 0, 0));
+      for (i = 0; i < Math.PI * 2; i += dr) pointsOrigin.push(scaleAndTranslate(heartPosition(i), 150, 9, 0, 0));
+      for (i = 0; i < Math.PI * 2; i += dr) pointsOrigin.push(scaleAndTranslate(heartPosition(i), 90, 5, 0, 0));
+      var heartPointsCount = pointsOrigin.length;
 
+      var targetPoints = [];
+      var pulse = function (kx, ky) {
+        for (i = 0; i < pointsOrigin.length; i++) {
+          targetPoints[i] = [];
+          targetPoints[i][0] = kx * pointsOrigin[i][0] + width / 2;
+          targetPoints[i][1] = ky * pointsOrigin[i][1] + height / 2;
+        }
+      };
 
-    <div class="unslate_co--site-wrap">
+      var e = [];
+      for (i = 0; i < heartPointsCount; i++) {
+        var x = rand() * width;
+        var y = rand() * height;
+        e[i] = {
+          vx: 0,
+          vy: 0,
+          R: 2,
+          speed: 12,
+          q: ~~(rand() * heartPointsCount),
+          D: 2 * (i % 2) - 1,
+          force: 0.2 * rand() + 0.7,
+          f: "hsla(0," + ~~(40 * rand() + 80) + "%," + ~~(60 * rand() + 20) + "%,.3)",
+          trace: []
+        };
+        for (var k = 0; k < traceCount; k++) e[i].trace[k] = { x: x, y: y };
+      }
 
-      <div class="unslate_co--site-inner">
+      var config = {
+        traceK: 0.4,
+        timeDelta: 0.01
+      };
 
-        <div class="lines-wrap">
-          <div class="lines-inner">
-            <div class="lines"></div>
-          </div>
-        </div>
-      
-      <nav class="unslate_co--site-nav site-nav-target">
+      var time = 0;
+      var loop = function () {
+        var n = -Math.cos(time);
+        pulse((1 + n) * .5, (1 + n) * .5);
+        time += ((Math.sin(time)) < 0 ? 9 : (n > 0.8) ? .2 : 1) * config.timeDelta;
+        ctx.fillStyle = "rgba(0,0,0)";
+        ctx.fillRect(0, 0, width, height);
+        for (i = e.length; i--;) {
+          var u = e[i];
+          var q = targetPoints[u.q];
+          var dx = u.trace[0].x - q[0];
+          var dy = u.trace[0].y - q[1];
+          var length = Math.sqrt(dx * dx + dy * dy);
+          if (10 > length) {
+            if (0.95 < rand()) {
+              u.q = ~~(rand() * heartPointsCount);
+            }
+            else {
+              if (0.99 < rand()) {
+                u.D *= -1;
+              }
+              u.q += u.D;
+              u.q %= heartPointsCount;
+              if (0 > u.q) {
+                u.q += heartPointsCount;
+              }
+            }
+          }
+          u.vx += -dx / length * u.speed;
+          u.vy += -dy / length * u.speed;
+          u.trace[0].x += u.vx;
+          u.trace[0].y += u.vy;
+          u.vx *= u.force;
+          u.vy *= u.force;
+          for (k = 0; k < u.trace.length - 1;) {
+            var T = u.trace[k];
+            var N = u.trace[++k];
+            N.x -= config.traceK * (N.x - T.x);
+            N.y -= config.traceK * (N.y - T.y);
+          }
+          ctx.fillStyle = "rgba(232,53,116)";
+          for (k = 0; k < u.trace.length; k++) {
+            ctx.fillRect(u.trace[k].x, u.trace[k].y, 1, 1);
+          }
+        }
 
-        <div class="container">
-        
-          <div class="row align-items-center justify-content-between text-left">
-            <div class="col-md-5 text-right">
-              <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
-                <li class="has-children">
-                  <a href="#home-section" class="nav-link">Ana Sayfa</a>
-                </li>
-                <li><a href="#portfolio-section" class="nav-link">Portfolyo</a></li>
-                <li><a href="#services-section" class="nav-link">Özellikler</a></li>
-                
-              </ul>
-            </div>
-            <div class="site-logo pos-absolute">
-              <a href="index.html" class="unslate_co--site-logo">ALİCE<span>.</span></a>
-            </div>
-            <div class="col-md-5 text-right text-lg-left">
-              <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
-                <li><a href="#testimonial-section" class="nav-link">Yorumlar</a></li>
-                <li><a href="#contact-section" class="nav-link">İletişim</a></li>
-                <li><a href="#about-section" class="nav-link">Diğer</a></li>
-              </ul>
-
-              <ul class="site-nav-ul-none-onepage text-right d-inline-block d-lg-none">
-                <li><a href="#" class="js-menu-toggle">Menü</a></li
-              </ul>
-
-            </div>
-          </div>
-        </div>
-
-      </nav>
-
-      <div class="cover-v1 jarallax" style="background-image: url('https://i.hizliresim.com/7tkprv8.gif');" id="home-section">
-        <div class="container">
-          <div class="row align-items-center">
-              
-            <div class="col-md-7 mx-auto text-center">
-              <h1 class="heading gsap-reveal-hero">Alice</h1>
-              <h2 class="subheading gsap-reveal-hero">Alice ile hayat daha kolay! <br> Ön Kayıt Yaptır!</h2>
-            </div>
-
-          </div>
-        </div>
-
-
-        <a href="#portfolio-section" class="mouse-wrap smoothscroll">
-          <span class="mouse">
-            <span class="scroll"></span>
-          </span>
-          <span class="mouse-label">Kaydır!</span>
-        </a>
-
-      </div>
-
-
-      <div class="unslate_co--section" id="portfolio-section">
-        <div class="container">
-          
-          
-          <div class="relative"><div class="loader-portfolio-wrap"><div class="loader-portfolio"></div></div> </div>
-          <div id="portfolio-single-holder"></div>
-
-          <div class="portfolio-wrapper">
-
-            <div class="d-flex align-items-center mb-4 gsap-reveal gsap-reveal-filter">
-              <h2 class="mr-auto heading-h2"><span class="gsap-reveal">Portfolyo</span></h2>
-
-            </div>
-
-
-            
-
-
-            <div id="posts" class="row gutter-isotope-item">
-              <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-                <a href="#" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="1">
-                    <div class="overlay">
-                      <span class="wrap-icon icon-link2"></span>
-                      <div class="portfolio-item-content">
-                        <h3>Görünmez Tasarım</h3>
-                        <p>Alice</p>
-                      </div>
-                    </div>
-                    <img src="images/AliceLogo.jpg" class="lazyload  img-fluid" alt="Images" />
-                  </a>
-              </div>
-              <div class="item branding packaging illustration col-sm-6 col-md-6 col-lg-4 isotope-mb-2 ">
-                <a href="#" class="portfolio-item ajax-load-page item-portrait isotope-item gsap-reveal-img" data-id="3">
-                    <div class="overlay">
-                      <span class="wrap-icon icon-link2"></span>
-                      <div class="portfolio-item-content">
-                        <h3>Çok Akıllı Bir Yapay Zeka</h3>
-                        <p>Alice</p>
-                      </div>
-                    </div>
-                    <img src="images/AliceLogo kopyası.png" class="lazyload  img-fluid" alt="Images" />
-                  </a>
-              </div>
-
-              <div class="item branding packaging col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-                <a href="#" class="portfolio-item isotope-item gsap-reveal-img ajax-load-page" data-id="4">
-                    <div class="overlay">
-                      <span class="wrap-icon icon-link2"></span>
-                      <div class="portfolio-item-content">
-                        <h3>Modern Altyapı</h3>
-                        <p>Alice</p>
-                      </div>
-                    </div>
-                    <img src="images/AliceLogo.jpg" class="lazyload  img-fluid" alt="Images" />
-                  </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="unslate_co--section">
-        <div class="container">
-          <div class="owl-carousel logo-slider">
-            <div class="logo-v1 gsap-reveal">
-              <img src="images/Openweater.png" alt="Image" class="img-fluid">
-            </div>
-            <div class="logo-v1 gsap-reveal">
-              <img src="images/Discord.png" alt="Image" class="img-fluid">
-            </div>
-            <div class="logo-v1 gsap-reveal">
-              <img src="images/spotify.png" alt="Image" class="img-fluid">
-            </div>
-            <div class="logo-v1 gsap-reveal">
-              <img src="images/Rapid.png" alt="Image" class="img-fluid">
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="unslate_co--section" id="about-section">
-        <div class="container">
-          
-          <div class="section-heading-wrap text-center mb-5">
-            <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">Benim Hakkımda</span></h2>
-            <span class="gsap-reveal">
-            <img src="images/divider.png" alt="divider" width="76">
-            </span>
-          </div>
-          
-
-          <div class="row mt-5 justify-content-between">
-            <div class="col-lg-7 mb-5 mb-lg-0">
-              <figure class="dotted-bg gsap-reveal-img ">
-                <img src="images/zafer.png" alt="Image" class="img-fluid">
-              </figure>
-            </div>
-            <div class="col-lg-4 pr-lg-5">
-              <h3 class="mb-4 heading-h3"><span class="gsap-reveal">Hey! Ben Zafer Kılıç</span></h3>
-              <p class="lead gsap-reveal">Python üzerinde yapay zeka projeleri ile ilgileniyorum. Şu anda Alice adlı yapay zeka asistanımı dünyaya getirmek için çalışıyorum! Ayrıca C++ kullanarak python yapay zeka projelerimi robotlar,akıllı evler ve bir çok alanda kullanabiliyorum. </p>
-              <p class="mb-4 gsap-reveal">Burası da benim projem için yaptığım portfolyo sitem. Benimle iletişime geçmek için <a href="#">GitHub</a> Adresimi ziyaret edin!</p>
-              <p class="gsap-reveal"><a href="#contact-section" class="btn btn-outline-pill btn-custom-light">İletişime Geç!</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="unslate_co--section" id="services-section">
-        <div class="container">
-
-          <div class="section-heading-wrap text-center mb-5">
-            <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">Alice Servisleri</span></h2>
-            <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span>
-          </div>
-
-          <div class="row gutter-v3">
-            <div class="col-md-6 col-lg-4 mb-4">
-              <div class="feature-v1" data-aos="fade-up" data-aos-delay="0">
-                <div class="wrap-icon mb-3">
-                  <img src="images/svg/001-options.svg" alt="Image" width="45">
-                </div>
-                <h3>Gelişmiş Yapay <br> Zeka</h3>
-                <p>Alice, gelişmiş yapay zekası ile resim çizebilir, sizin nelerden hoşlandığınızı anlayabilir veya ruh halinizi anlayabilir.</p>
-              </div> 
-            </div>
-            <div class="col-md-6 col-lg-4 mb-4">
-              <div class="feature-v1" data-aos="fade-up" data-aos-delay="100">
-                <div class="wrap-icon mb-3">
-                  <img src="images/svg/002-chat.svg" alt="Icon" width="45">
-                </div>
-                <h3>Görünmez <br> Tasarım</h3>
-                <p>Alice'in bir arayüzü yok. Bu sayede düşük CPU kullanarak arka planda çalışır.</p>
-              </div> 
-            </div>
-            <div class="col-md-6 col-lg-4 mb-4">
-              <div class="feature-v1" data-aos="fade-up" data-aos-delay="200">
-                <div class="wrap-icon mb-3">
-                  <img src="images/svg/003-contact-book.svg" alt="Image" class="img-fluid" width="45">
-                </div>
-                <h3>API <br> Servisleri</h3>
-                <p>Alice, uyumlu olduğu API servisleri ile her zaman iletişim durumundadır. Bu sayede istediğiniz bilgiye anında ulaşmanızı sağlar.</p>
-              </div> 
-            </div>
-
-            <div class="col-md-6 col-lg-4 mb-4">
-              <div class="feature-v1" data-aos="fade-up" data-aos-delay="0">
-                <div class="wrap-icon mb-3">
-                  <img src="images/svg/004-percentage.svg" alt="Image" width="45">
-                </div>
-                <h3>Platfromlara Tam<br> Uyumluluk</h3>
-                <p>Alice, işletim sisteminize yerleştiğinden itibaren sizin tüm dosyalarınıza erişir. Alice üzerinden dosya araması yapabilir, geçici dosyaları silebilir yada cihazınızın yazılımsal bakımını yapabilirsiniz.</p>
-              </div> 
-            </div>
-            <div class="col-md-6 col-lg-4 mb-4">
-              <div class="feature-v1" data-aos="fade-up" data-aos-delay="100">
-                <div class="wrap-icon mb-3">
-                  <img src="images/svg/006-goal.svg" alt="Image" width="45">
-                </div>
-                <h3>ALSS <br> Algoritması</h3>
-                <p>ALSS, Alice'in kullandığı bir veri kriptografi methodudur. Bu sayede hem veri merkezinde ki hemde cihazınızdaki veriler güvende kalır.</p>
-              </div> 
-            </div>
-            <div class="col-md-6 col-lg-4 mb-4">
-              <div class="feature-v1" data-aos="fade-up" data-aos-delay="200">
-                <div class="wrap-icon mb-3">
-                  <img src="images/svg/005-line-chart.svg" alt="Image" width="45">
-                </div>
-                <h3>Fiyat İzleme</h3>
-                <p>Alice, ürünleri, kurları vs. fiyat değikenliği gösteren ürünleri takip eder. Ürünler indirime girdiğinde yada kurlarda değişiklik görüldüğünde size haber verir.</p>
-              </div> 
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-      <div class="unslate_co--section section-counter" id="skills-section">
-        <div class="container">
-          <div class="section-heading-wrap text-center mb-5">
-            <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">Alice Özellikleri</span></h2>
-            <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span>
-          </div>
-
-
-          <div class="row pt-5">
-            <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
-              <div class="counter-v1 text-center">
-                <span class="number-wrap">
-                  <span class="number number-counter" data-number="75">0</span>
-                  <span class="append-text">%</span>
-                </span>
-                <span class="counter-label">Yapay Zekâ</span>
-              </div>
-            </div>
-            <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
-              <div class="counter-v1 text-center">
-                <span class="number-wrap">
-                  <span class="number number-counter" data-number="90">0</span>
-                  <span class="append-text">%</span>
-                </span>
-                <span class="counter-label">Başarılı Kullanıcı Analizi</span>
-              </div>
-            </div>
-            <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
-              <div class="counter-v1 text-center">
-                <span class="number-wrap">
-                  <span class="number number-counter" data-number="95">0</span>
-                  <span class="append-text">/100</span>
-                </span>
-                <span class="counter-label">Aktif API Servileri</span>
-              </div>
-            </div>
-            <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-              <div class="counter-v1 text-center">
-                <span class="number-wrap">
-                  <span class="number number-counter" data-number="100">0</span>
-                  <span class="append-text">%</span>
-                </span>
-                <span class="counter-label">Yardımcı</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="unslate_co--section" id="testimonial-section">
-        <div class="container">
-          <div class="section-heading-wrap text-center mb-5">
-            <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">Yorumlar</span></h2>
-            <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span>
-          </div>
-        </div>
-
-        <div class="owl-carousel testimonial-slider" data-aos="fade-up">
-          <div>
-            <div class="testimonial-v1">
-              <div class="testimonial-inner-bg">
-                <span class="quote">&ldquo;</span>
-                <blockquote>
-                  Alice, öğrencilik yıllarımda bana çok yardımcı oldu. Ödevimi yaparken ve araştırma yaparken çok işime yaradı.<br> Tam sürüm için Sabırsızlanıyorum!
-                </blockquote>
-              </div>
-              
-              <div class="testimonial-author-info">
-                <img src="images/woman.png" alt="Image">
-                <h3>N... K....</h3>
-                <span class="d-block position">Öğrenci</span>
-              </div>
-
-            </div>
-          </div>
-          <div>
-            <div class="testimonial-v1">
-              <div class="testimonial-inner-bg">
-                <span class="quote">&ldquo;</span>
-                <blockquote>
-                  Alice, zamanının büyük kısmını bilgisayar da geçirenler için mükemmel bir program. <br> Yapay zekâ ile size bir arkadaş gibi yaklaşıyor.
-                </blockquote>
-              </div>
-              
-              <div class="testimonial-author-info">
-                <img src="images/man.png" alt="Image">
-                <h3>C.. Ö....</h3>
-                <span class="d-block position">DEMO Kullanıcı</span>
-              </div>
-
-            </div>
-          </div>
-          <div>
-            <div class="testimonial-v1">
-              <div class="testimonial-inner-bg">
-                <span class="quote">&ldquo;</span>
-                <blockquote>
-                  Alice, diğer geliştirdiğimiz diğer programlardan çok farklı. Sanki bilgisayarınızın içinde bir insan varmış gibi.<br> Sizin sanal bir arkadaşınız gibi...
-                </blockquote>
-              </div>
-              
-              <div class="testimonial-author-info">
-                <img src="images/unknown.png" alt="Image">
-                <h3>M1000</h3>
-                <span class="d-block position">Anonim Alice Geliştiricisi</span>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      
-
-
-      <div class="unslate_co--section" id="contact-section">
-        <div class="container">
-          <div class="section-heading-wrap text-center mb-5">
-            <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">İletişime Geç</span></h2>
-            <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span>
-          </div>
-
-
-          <div class="row justify-content-between">
-            
-            <div class="col-md-6">
-              <form method="post" class="form-outline-style-v1" id="contactForm" action="https://formspree.io/f/mqkjzpzl">
-                <div class="form-group row mb-0">
-
-                  <div class="col-lg-6 form-group gsap-reveal">
-                    <label for="name">Adın ve Soyadın</label>
-                    <input name="name" type="text" class="form-control" id="name">
-                  </div>
-                  <div class="col-lg-6 form-group gsap-reveal">
-                    <label for="email">Email</label>
-                    <input name="email" type="email" class="form-control" id="email">
-                  </div>
-                  <div class="col-lg-12 form-group gsap-reveal">
-                    <label for="message">Mesajın...</label>
-                    <textarea name="message" id="message" cols="30" rows="7" class="form-control"></textarea>
-                  </div>
-                </div>
-                <div class="form-group row gsap-reveal">
-                    <div class="col-md-12 d-flex align-items-center">
-                      <input type="submit" name="submit" class="btn btn-outline-pill btn-custom-light mr-3" value="Gönder!" >
-                      <span class="submitting"></span>
-                    </div>
-                  </div>
-              </form>
-              <div id="form-message-warning" class="mt-4"></div> 
-              <div id="form-message-success">
-                Mesajın bize iletildi! Teşekkür Ederim...
-              </div>
-
-            </div>
-
-            <div class="col-md-4">
-              <div class="contact-info-v1">
-                <div class="gsap-reveal d-block">
-                  <span class="d-block contact-info-label">Email</span>
-                  <a href="#" class="contact-info-val">alicesoftware.tr@gmail.com</a>
-                </div>
-                <div class="gsap-reveal d-block">
-                  <span class="d-block contact-info-label">Telefon</span>
-                  <a href="#" class="contact-info-val">+90 536 266 1693</a>
-                </div>
-                <div class="gsap-reveal d-block">
-                  <span class="d-block contact-info-label">Address</span>
-                  <address class="contact-info-val">Türkiye/Samsun <br> Atakum 871. Sokak</address>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-      </div> 
-
-      <footer class="unslate_co--footer unslate_co--section">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-md-7">
-              
-              <div class="footer-site-logo"><a href="#">Alice<span>.</span></a></div>
-
-              <ul class="footer-site-social">
-                <li><a href="https://twitter.com/Narkoss0">Twitter</a></li>
-                <li><a href="https://www.instagram.com/zafer.klc0/">Instagram</a></li>
-                <li><a href="https://github.com/ZaferKilic">GitHub</a></li>
-              </ul>
-
-              <p class="site-copyright">
-                
-                Copyright &copy;
-                <script>
-                  document.write(new Date().getFullYear());
-                </script> All rights reserved | This template is made with <i class="icon-heart"
-                  aria-hidden="true"></i> by <a href="https://github.com/ZaferKilic" target="_blank">M1000</a>
-              
-              </p>
-
-            </div>
-          </div>
-        </div>
-      </footer>
-
-      
-    </div>
-
+        //ctx.fillStyle = "rgba(255,255,255,1)";
+        // for (i = u.trace.length; i--;) ctx.fillRect(targetPoints[i][0], targetPoints[i][1], 2, 2);
+        window.requestAnimationFrame(loop, canvas);
+      };
+      loop();
+    };
     
-    <div id="unslate_co--overlayer"></div>
-    <div class="site-loader-wrap">
-      <div class="site-loader"></div>
-    </div>
+    var s = document.readyState;
+    if (s === 'complete' || s === 'loaded' || s === 'interactive') {
+      init()
+    }
+    else document.addEventListener('DOMContentLoaded', init, false);
+  </script>
+  <script type='text/javascript'> ! function (e, t, a) {
+      function rand() { return rand = ~~(20 * Math.random()) }
+      function n() { c(".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}"), o(), r() }
+      function r() { for (var e = 0; e < d.length; e++) d[e].alpha <= 0 ? (t.body.removeChild(d[e].el), d.splice(e, 1)) : (d[e].y--, d[e].scale += .004, d[e].alpha -= .013, d[e].el.style.cssText = "left:" + d[e].x + "px;top:" + d[e].y + "px;opacity:" + d[e].alpha + ";transform:scale(" + d[e].scale + "," + d[e].scale + ") rotate(45deg);background:" + d[e].color + ";z-index:99999"); requestAnimationFrame(r) }
+      function o() { var t = "function" == typeof e.onmousemove && e.onmousemove; e.onmousemove = function (e) { t && t(), i(e) } }
+      function i(e) { var a = t.createElement("div"); var rand1 = ~~(20 * Math.random() * (-1 ^ Math.random())); var rand2 = ~~(20 * Math.random() * (-1 ^ Math.random())); a.className = "heart", d.push({ el: a, x: e.clientX - rand1, y: e.clientY - rand2, scale: 1, alpha: 1, color: s() }), t.body.appendChild(a) }
+      function c(e) { var a = t.createElement("style"); a.type = "text/css"; try { a.appendChild(t.createTextNode(e)) } catch (t) { a.styleSheet.cssText = e } t.getElementsByTagName("head")[0].appendChild(a) }
+      //function s() { return "rgb(" + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + ")" } var d = []; e.requestAnimationFrame = function () { return e.requestAnimationFrame || e.webkitRequestAnimationFrame || e.mozRequestAnimationFrame || e.oRequestAnimationFrame || e.msRequestAnimationFrame || function (e) { setTimeout(e, 1e3 / 60) } }(), n() }(window, document
+      //function s() { return "rgb(" + 255 + "," + 0 + "," + 0 + ")" } var d = []; e.requestAnimationFrame = function () { return e.requestAnimationFrame || e.webkitRequestAnimationFrame || e.mozRequestAnimationFrame || e.oRequestAnimationFrame || e.msRequestAnimationFrame || function (e) { setTimeout(e,1e3/60) }} (), n()
+  }(window, document);
+  </script>
+</body>
 
-    <script src="js/scripts-dist.js"></script>
-    <script src="js/main.js"></script>
-
-  </body>
 </html>

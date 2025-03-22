@@ -1,22 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <title>EYLÜL'ÜM ❤️‍🔥</title>
-
     <style>
         canvas {
-        position: absolute;
-        left:0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0,0,0,.2);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.2);
         }
+        #loveText {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-family: 'Pacifico', cursive;
+            font-size: 18px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
     </style>
-  </head>
-  <body>  
-        <canvas id="heart"></canvas>
-        <script src="script.js"></script>
-  </body>
+</head>
+<body>
+    <canvas id="heart"></canvas>
+    <div id="loveText">Teknofest'in Bana Verdiği En Önemli Şey...</div>
+    <script src="script.js"></script>
+</body>
 </html>
